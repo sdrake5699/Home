@@ -45,7 +45,7 @@
             transform: translateY(-3px);
         }
 
-        /* Profile Card với Kim Cương */
+        /* Profile Card */
         .profile-card {
             display: flex;
             align-items: center;
@@ -103,119 +103,140 @@
             align-items: center;
         }
 
-        /* Action Buttons */
-        .action-buttons {
+        /* Order Card */
+        .order-card {
+            padding: 20px;
+        }
+
+        .order-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #212529;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .order-title a {
+            color: #0068FF;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #e9ecef;
+            margin: 16px 0;
+        }
+
+        /* Support Section */
+        .support-section {
+            padding: 20px;
+        }
+
+        .support-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #212529;
+        }
+
+        .support-time {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 16px;
+        }
+
+        /* Community Section */
+        .community-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .community-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #212529;
+        }
+
+        .community-buttons {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
-            padding: 18px;
         }
 
-        .action-btn {
+        .community-btn {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 16px 12px;
-            border-radius: 14px;
+            padding: 12px;
+            border-radius: 12px;
             background: white;
             border: none;
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 
-                0 4px 8px rgba(0, 0, 0, 0.08),
-                0 2px 4px rgba(0, 0, 0, 0.05);
+                0 2px 6px rgba(0, 0, 0, 0.08),
+                0 1px 3px rgba(0, 0, 0, 0.05);
         }
 
-        .action-btn:hover {
-            transform: translateY(-3px);
+        .community-btn:hover {
+            transform: translateY(-2px);
             box-shadow: 
-                0 8px 16px rgba(0, 0, 0, 0.12),
-                0 4px 8px rgba(0, 0, 0, 0.1);
+                0 4px 12px rgba(0, 0, 0, 0.12),
+                0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .action-btn:active {
-            transform: translateY(0);
+        .community-icon {
+            width: 28px;
+            height: 28px;
+            margin-bottom: 6px;
         }
 
-        .action-icon {
-            width: 32px;
-            height: 32px;
-            margin-bottom: 8px;
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-        }
-
-        .action-text {
-            font-size: 0.95rem;
-            font-weight: 600;
+        .community-text {
+            font-size: 0.85rem;
+            font-weight: 500;
             color: #495057;
         }
 
-        /* YouTube Button */
-        .youtube-btn {
-            background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+        /* Logout Button */
+        .logout-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
             color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            z-index: 10;
         }
 
-        /* Zalo Button */
-        .zalo-btn {
-            background: linear-gradient(135deg, #0068FF 0%, #0048CC 100%);
-            color: white;
+        .logout-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
         }
 
-        /* Invite Button */
-        .invite-btn {
-            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
-            color: white;
-            grid-column: span 2;
-            padding: 14px;
-            flex-direction: row;
+        .logout-btn:active {
+            transform: translateY(0);
         }
 
-        .invite-btn .action-icon {
-            margin-bottom: 0;
-            margin-right: 10px;
+        .logout-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
         }
 
-        /* Promo Card */
-        .promo-card {
-            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
-            color: white;
-            padding: 24px;
-            text-align: center;
-            box-shadow: 
-                0 8px 24px rgba(161, 140, 209, 0.4),
-                0 4px 12px rgba(251, 194, 235, 0.3);
-        }
-
-        .promo-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .promo-subtitle {
-            font-size: 1rem;
-            opacity: 0.95;
-            margin-bottom: 16px;
-        }
-
-        .promo-code {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 10px 20px;
-            border-radius: 24px;
-            font-weight: 700;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-            display: inline-block;
-            backdrop-filter: blur(5px);
-            box-shadow: 
-                0 4px 12px rgba(0, 0, 0, 0.1),
-                inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-        }
-
-        /* Toast thông báo */
+        /* Toast Notification */
         .toast {
             position: fixed;
             bottom: 30px;
@@ -236,108 +257,10 @@
         .toast.show {
             opacity: 1;
         }
-
-        /* Nút đăng xuất */
-        .logout-btn {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
-            color: white;
-            border: none;
-            padding: 16px;
-            border-radius: 14px;
-            width: 100%;
-            max-width: 420px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            margin-top: 10px;
-            box-shadow: 
-                0 4px 8px rgba(0, 0, 0, 0.08),
-                0 2px 4px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .logout-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 
-                0 8px 16px rgba(0, 0, 0, 0.12),
-                0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .logout-btn:active {
-            transform: translateY(0);
-        }
-
-        /* Hộp thoại xác nhận */
-        .confirm-dialog {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 2000;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-
-        .confirm-dialog.show {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .confirm-box {
-            background: white;
-            padding: 24px;
-            border-radius: 18px;
-            width: 90%;
-            max-width: 350px;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        .confirm-message {
-            font-size: 1.1rem;
-            margin-bottom: 24px;
-            color: #333;
-        }
-
-        .confirm-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-        }
-
-        .confirm-btn {
-            padding: 10px 20px;
-            border-radius: 12px;
-            border: none;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .confirm-btn.yes {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
-            color: white;
-        }
-
-        .confirm-btn.no {
-            background: #f1f1f1;
-            color: #333;
-        }
-
-        .confirm-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
     </style>
 </head>
 <body>
-    <!-- Thẻ profile với kim cương -->
+    <!-- Profile Card -->
     <div class="card profile-card">
         <div class="diamond-badge">VIP</div>
         <img src="https://ibb.co/6JV5sJRk" alt="Profile" class="profile-pic">
@@ -347,59 +270,65 @@
         </div>
     </div>
 
-    <!-- Các nút chức năng -->
-    <div class="card">
-        <div class="action-buttons">
-            <button class="action-btn youtube-btn" id="youtubeBtn">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="action-icon">
-                <span class="action-text">YouTube</span>
+    <!-- Order Card -->
+    <div class="card order-card">
+        <div class="order-title">
+            Đơn hàng của tôi
+            <a href="https://example.com/orders" id="viewMoreBtn">xem thêm</a>
+        </div>
+        <div>
+            <p>Đối thiết bị</p>
+        </div>
+    </div>
+
+    <!-- Support Card -->
+    <div class="card support-section">
+        <h3 class="support-title">Liên hệ CSKH</h3>
+        <p class="support-time">Online Time: 9:30 - 23:00 (UTC+8)</p>
+        <button class="community-btn" id="contactBtn" style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white; grid-column: span 2;">
+            <span class="community-text">Liên hệ ngay</span>
+        </button>
+    </div>
+
+    <!-- Community Card -->
+    <div class="card community-section">
+        <h3 class="community-title">cộng đồng chính thức</h3>
+        <div class="community-buttons">
+            <button class="community-btn" id="discordBtn">
+                <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord" class="community-icon">
+                <span class="community-text">Discord</span>
             </button>
-            
-            <button class="action-btn zalo-btn" id="zaloBtn">
-                <img src="https://cdn-icons-png.flaticon.com/512/3669/3669491.png" alt="Zalo" class="action-icon">
-                <span class="action-text">Zalo</span>
+            <button class="community-btn" id="youtubeBtn">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="community-icon">
+                <span class="community-text">YouTube</span>
             </button>
-            
-            <button class="action-btn invite-btn" id="inviteBtn">
-                <img src="https://cdn-icons-png.flaticon.com/512/3132/3132777.png" alt="Invite" class="action-icon">
-                <span class="action-text">Mời bạn bè cùng chơi</span>
+            <button class="community-btn" id="zaloBtn">
+                <img src="https://cdn-icons-png.flaticon.com/512/3669/3669491.png" alt="Zalo" class="community-icon">
+                <span class="community-text">Zalo</span>
+            </button>
+            <button class="community-btn" id="facebookBtn">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" class="community-icon">
+                <span class="community-text">Facebook</span>
             </button>
         </div>
     </div>
 
-    <!-- Thẻ ưu đãi -->
-    <div class="card promo-card">
-        <h3 class="promo-title">ƯU ĐÃI ĐẶC BIỆT</h3>
-        <p class="promo-subtitle">Nhập mã để nhận ngay 99999 Kim Cương</p>
-        <div class="promo-code">GAMERVIP</div>
-    </div>
-
-    <!-- Nút đăng xuất -->
+    <!-- Logout Button -->
     <button class="logout-btn" id="logoutBtn">
+        <img src="https://cdn-icons-png.flaticon.com/512/3889/3889528.png" alt="Đăng xuất" class="logout-icon">
         Đăng xuất
     </button>
 
-    <!-- Toast thông báo -->
+    <!-- Toast Notification -->
     <div class="toast" id="toast">Đã sao chép liên kết!</div>
 
-    <!-- Hộp thoại xác nhận đăng xuất -->
-    <div class="confirm-dialog" id="confirmDialog">
-        <div class="confirm-box">
-            <p class="confirm-message">Bạn có chắc muốn đăng xuất?</p>
-            <div class="confirm-buttons">
-                <button class="confirm-btn yes" id="confirmYes">Có</button>
-                <button class="confirm-btn no" id="confirmNo">Không</button>
-            </div>
-        </div>
-    </div>
-
     <script>
-        // Chặn zoom trên mobile
+        // Prevent zoom on mobile
         document.addEventListener('gesturestart', function(e) { e.preventDefault(); });
         document.addEventListener('wheel', function(e) { if(e.ctrlKey) e.preventDefault(); }, { passive: false });
         
-        // Hiệu ứng khi nhấn nút
-        document.querySelectorAll('.action-btn').forEach(btn => {
+        // Button press effect
+        document.querySelectorAll('.community-btn, .logout-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 this.style.transform = 'scale(0.95)';
                 setTimeout(() => {
@@ -408,61 +337,67 @@
             });
         });
 
-        // Xử lý copy link
+        // Copy to clipboard function
         function copyToClipboard(text, toastMessage) {
             navigator.clipboard.writeText(text).then(() => {
-                const toast = document.getElementById('toast');
-                toast.textContent = toastMessage || 'Đã sao chép liên kết!';
-                toast.classList.add('show');
-                setTimeout(() => toast.classList.remove('show'), 2000);
+                showToast(toastMessage || 'Đã sao chép liên kết!');
             }).catch(err => {
-                console.error('Lỗi khi copy: ', err);
-                // Fallback cho trình duyệt cũ
+                console.error('Copy error: ', err);
+                // Fallback for old browsers
                 const textarea = document.createElement('textarea');
                 textarea.value = text;
                 document.body.appendChild(textarea);
                 textarea.select();
                 document.execCommand('copy');
                 document.body.removeChild(textarea);
-                
-                const toast = document.getElementById('toast');
-                toast.textContent = 'Đã sao chép (dùng phương pháp dự phòng)';
-                toast.classList.add('show');
-                setTimeout(() => toast.classList.remove('show'), 2000);
+                showToast('Đã sao chép (dùng phương pháp dự phòng)');
             });
         }
 
-        // Gán sự kiện cho các nút
+        // Show toast notification
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
+        }
+
+        // Button event handlers
+        document.getElementById('viewMoreBtn').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = 'https://example.com/orders';
+        });
+
+        document.getElementById('contactBtn').addEventListener('click', () => {
+            window.location.href = 'https://example.com/contact';
+        });
+
+        document.getElementById('discordBtn').addEventListener('click', () => {
+            window.open('https://discord.gg/example', '_blank');
+        });
+
         document.getElementById('youtubeBtn').addEventListener('click', () => {
-            copyToClipboard('https://www.youtube.com/@Tuanlamfixlag', 'Đã copy link YouTube!');
+            window.open('https://www.youtube.com/@Tuanlamfixlag', '_blank');
         });
 
         document.getElementById('zaloBtn').addEventListener('click', () => {
-            copyToClipboard('https://zalo.me/g/ahmzci898', 'Đã copy link Zalo!');
+            window.open('https://zalo.me/g/ahmzci898', '_blank');
         });
 
-        document.getElementById('inviteBtn').addEventListener('click', () => {
-            copyToClipboard('CHƯA COÁ😤', 'Đã copy link mời bạn!');
+        document.getElementById('facebookBtn').addEventListener('click', () => {
+            window.open('https://facebook.com/example', '_blank');
         });
 
-        // Xử lý đăng xuất
-        const logoutBtn = document.getElementById('logoutBtn');
-        const confirmDialog = document.getElementById('confirmDialog');
-        const confirmYes = document.getElementById('confirmYes');
-        const confirmNo = document.getElementById('confirmNo');
-
-        logoutBtn.addEventListener('click', () => {
-            confirmDialog.classList.add('show');
-        });
-
-        confirmYes.addEventListener('click', () => {
-            // Thay đổi link này thành trang đăng xuất thực tế của bạn
-            window.location.href = 'https://sdrake5699.github.io/Login';
-        });
-
-        confirmNo.addEventListener('click', () => {
-            confirmDialog.classList.remove('show');
+        // Logout handler
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            if(confirm('Bạn có chắc chắn muốn đăng xuất?')) {
+                // Thực hiện xử lý đăng xuất ở đây
+                // Ví dụ: xóa token, clear session...
+                
+                // Sau đó chuyển hướng về trang đăng nhập
+                window.location.href = 'https://example.com/login';
+            }
         });
     </script>
 </body>
-                    </html>
+</html>
